@@ -1,6 +1,6 @@
 # Corporate Travel Analytics
 
-Portfolio project analysing a synthetic corporate travel programme using Excel, with SQL and Power BI planned as the next stages.
+Portfolio project analysing a synthetic corporate travel programme using Excel and Power BI, with SQL analysis currently in progress.
 
 The project explores travel spend, booking behaviour, policy compliance, supplier usage, trip changes and cancellations, traveller feedback, service performance, and sustainability.
 
@@ -71,10 +71,37 @@ The Excel stage includes:
 - sustainability analysis
 - executive summary
 
-### Planned Next Stages
+### Power BI Dashboard
 
-- SQL for relational analysis and querying
-- Power BI for dashboard development and data visualisation
+An interactive Power BI dashboard was developed to present the main travel programme KPIs and analytical findings.
+
+Key dashboard views include:
+
+- Total trips, total spend and average trip cost
+- Policy compliance
+- Monthly travel spend
+- Spend by department
+- Top destinations by trip volume
+- Average airfare by booking lead time
+- Interactive month filtering
+
+![Power BI Dashboard](dashboard/screenshots/powerbi_dashboard.png)
+
+### Power BI files
+
+- [View dashboard PDF](dashboard/powerbi/Corporate_Travel_Analytics_Dashboard.pdf)
+- [Download Power BI report (.pbix)](dashboard/powerbi/Corporate_Travel_Analytics_Dashboard.pbix)
+
+### SQL Analysis
+
+The SQL stage is currently in progress and includes:
+
+- relational database design
+- primary and foreign keys
+- importing cleaned CSV datasets into MySQL
+- validation queries
+- joins across travel, traveller and supplier tables
+- business-focused spend, compliance, change and cancellation analysis
 
 ## Data Preparation and Validation
 
@@ -305,27 +332,42 @@ This project demonstrates practical experience with:
 - translating analysis into recommendations
 - communicating findings in plain business language
 
+### Power BI
+
+- Built an interactive dashboard from the cleaned travel dataset
+- Created DAX measures and calculated columns
+- Used KPI cards, line charts, bar charts and column charts
+- Applied visual-level filters and Top N filtering
+- Created custom category sorting for booking lead-time buckets
+- Added an interactive month slicer
+
 ## Project Structure
 
 ```text
 corporate-travel-analytics/
 ├── README.md
-├── excel/
-│   └── corporate_travel_analytics.xlsx
+├── corporate_travel_analytics.xlsx
 ├── dashboard/
 │   └── screenshots/
 │       ├── executive_summary.png
-│       └── spend_booking_analysis.png
+│       ├── spend_booking_analysis.png
+│       └── powerbi_dashboard.png
 ├── data/
-└── sql/
+├── sql/
+│   ├── schema.sql
+│   └── analysis_queries.sql
+└── ...
 ```
 
 ## Project Status
 
 **Excel analysis: completed**
 
+**Power BI dashboard: completed**
+
+**SQL analysis: in progress**
+
 Next stages:
 
-- SQL analysis
-- Power BI dashboard
-- final portfolio visualisation and documentation
+- complete business-focused SQL analysis queries
+- final portfolio QA and documentation
